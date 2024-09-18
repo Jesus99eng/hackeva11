@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas Programadas</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="fondo_inicio">
+            <ul>
+                <li>
+                    <a class="logo" href="index.html">
+                        <img src="imagenes/logo-eva.svg">
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Mis Cursos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Biblioteca</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="horasprogramadas.html">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Horas programadas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>Pagos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="regla_poli.html">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                        <span>Reglamentos-Politicas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Beneficios</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="capacitaciones.html">
+                        <i class="fa-solid fa-clipboard-list"></i>
+
+                        <span>Capacitaciones</span>
+                    </a>
+                </li>
+
+                <li class="logout">
+                    <a href="">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+        <section class="main">
+
+            <div class="containernav">
+                <div>
+                    <h3>Horas Programadas</h3>
+                </div>
+                <div>
+                    <i class="fa-regular fa-circle-question"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Jesus Avila</span>
+
+                </div>
+
+            </div>
+
+            <div class="busqueda">
+
+                <div>
+                    <select class="selectform" name="año" id="año">
+                        <option value="1293">2024</option>
+                        <option value="1294">2023</option>
+                        <option value="1295">2022</option>
+                        <option value="1296">2021</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="selectform" name="mes" id="mes">
+                        <option value="1293">enero</option>
+                        <option value="1294">febrero</option>
+                        <option value="1295">marzo</option>
+                        <option value="1296">abril</option>
+                    </select>
+                </div>
+                <div class="desde">
+
+                    <div style="padding-right: 5px;">
+                        <p>Desde: </p>
+                    </div>
+                    <div>
+                        <input class="inputdesde" type="text" name="desde" id="desde" placeholder="17/06/24">
+                    </div>
+                </div>
+                <div class="hasta">
+                    <div style="padding-right: 5px;">
+                        <p>Hasta:</p>
+                    </div>
+                    <div>
+                        <input class="inputhasta" type="text" name="hasta" id="hasta" placeholder="31/12/24">
+                    </div>
+
+                </div>
+
+                <div>
+                    <button class="btnfiltrar">Filtrar</button>
+                </div>
+
+
+            </div>
+
+              <div class="horaprogramadas">
+                <div>
+                    <table class="table1">
+                        <tr>
+                            <th>nro </th>
+                            <th>unidad </th>
+                            <th>didactica </th>
+                            <th>fechaclases </th>
+                            <th>inicio </th>
+                            <th>fin </th>
+                            <th>duracion (min) </th>
+                            <th>duracion(hora)</th>
+                            <th>moneda </th>
+                            <th>estado </th>
+                            <th>mespagado </th>
+                            <th>seccion </th>
+                            <th>periodoacademico </th>
+                            <th>producto</th>
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        <tr id="containertabla">
+                            <td>1 </td>
+                            <td>101</td>
+                            <td>virtual </td>
+                            <td>20/10/2024</td>
+                            <td>8:00 pm</td>
+                            <td>9:20 pm</td>
+                            <td>90min</td>
+                            <td>1:30hr</td>
+                            <td>USD</td>
+                            <td>Libre</td>
+                            <td>Cancelado</td>
+                            <td>A</td>
+                            <td>2024-2 </td>
+                            <td>Curso 1 </td>
+                       
+
+                        </tr>
+                        
+
+
+                    </table>
+                </div>
+
+
+            </div>
+
+    <div class="finaldiv">
+        <div>
+            <table>
+                <tr>
+                    <th>Total duracion (min): </th>
+                    <th>1920</th>
+                </tr>
+                <tr>
+                    <td>total duracion(horas):</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>total horas x tarifa (S/.):</td>
+                    <td>800</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div>
+            <button>Calendario de pago</button>
+            <button>Descarga</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    </section>
+    </div>
+
+
+    
+</body>
+
+</html>

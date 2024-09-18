@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.fondo_inicio {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 90px;
+  background-color: #171717;
+  transition: 1s;
+}
+
+nav:hover {
+  width: 280px;
+  transition: 1s;
+}
+
+.logo {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.logo span {
+  font-size: 18px;
+  padding-left: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  padding: 10px;
+  display: table;
+}
+
+i {
+  width: 70px;
+  font-size: 18px;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+span {
+  top: 12px;
+  font-size: 15px;
+  margin-left: 15px;
+  color: #a3a3a3;
+}
+
+a:hover {
+  background: #2f2f2f;
+  border-radius: 40px;
+}
+
+a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+a:hover span {
+  color: white;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  background: none;
+}
+
+.logo:hover span {
+  color: white;
+  transition: 0.5s;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  position: relative;
+  background: white;
+  width: 100%;
+}
+
+.mainTop {
+  width: 100%;
+  display: flex;
+  padding: 36px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainTop div {
+  background-color: rgb(25, 1, 67);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card i {
+  background: #e3e5e8;
+  color: #190143;
+  padding: 12px 5px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.card h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #190143;
+}
+
+.card p {
+  font-size: 13px;
+  color: #bbbfbf;
+}
+
+.reports {
+  display: flex;
+  justify-content: space-around;
+}
+
+.horaprogramadas {
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table1 {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 350px;
+  overflow: scroll;
+}
+
+.table1 tr th,
+.table1 tr td {
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  padding: 5px;
+}
+
+.table1 tr th:first-child,
+.table1 tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+
+.table1 tr th {
+  background: #f1f0f0;
+  border-top: 1px solid #bbb;
+  text-align: left;
+}
+
+/* top-left border-radius */
+.table1 tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+/* top-right border-radius */
+.table1 tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+/* bottom-left border-radius */
+.table1 tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+/* bottom-right border-radius */
+.table1 tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+.containernav {
+  background-color: white;
+  border-bottom: 1px solid rgb(245, 242, 242);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.busqueda {
+  display: flex;
+  flex: wrap;
+  gap: 8px;
+  justify-content:space-around;
+  align-items: center;
+  padding: 24px;
+  width: 600px;
+}
+
+.containernav i {
+  color: #737373;
+}
+
+.containernav span {
+  color: black;
+}
+
+.finaldiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.inputbusqueda {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 24px;
+}
+
+.busqinput{
+  border: 1px solid #737373;
+  border-radius: 24px;
+  width: 820px;
+  height: 50px;
+  padding: 10px;
+}
+
+.busqinput:hover{
+border: 1px solid #722AE9;
+}
+
+
+.main_index {
+  position: relative;
+  background: #f1eeee;
+  width: 100%;
+}
+
+.articulo1 {
+  background-image: url(imagenes/articulo.jpg);
+  background-size: contain;
+
+  margin: 24px;
+
+  width: 800px;
+  height: 600px;
+}
+
+.conta {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prog {
+  padding: 10px;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prog1 {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.hrsec {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: small;
+  text-align: justify;
+}
+
+.fecha {
+  padding: 10px;
+  width: 50px;
+}
+.detallehr {
+  padding: 10px;
+  width: 200px;
+  border-left: 5px solid #9fd019;
+}
+
+.coloriconprog {
+  color: black;
+  cursor: pointer;
+}
+
+.Facultad {
+  background-color: white;
+  width: 800px;
+  height: 550px;
+  display: flex;
+  padding: 20px;
+  border: #a3a3a3;
+  border-radius: 20px;
+  float: left;
+}
+.Programacion {
+  background-color: white;
+  width: 300px;
+  height: 550px;
+  display: flex;
+  padding: 20px;
+  float: right;
+  border: #a3a3a3;
+  border-radius: 20px;
+  line-height: 1em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.coloricon {
+  color: black;
+  padding: 5px;
+}
+
+.imag {
+  width: 750;
+  height: 150;
+}
+
+.regu {
+  padding: 10px;
+  display: flex;
+  flex: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.reglam {
+  width: 600px;
+  height: 120px;
+  background-color: white;
+  border-radius: 10px solid black;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.generc {
+  padding-bottom: 10px;
+}
+.guias {
+  width: 600px;
+  height: 120px;
+  background-color: white;
+  border-radius: 10px solid black;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.pre {
+  color: blue;
+  font-size: 10px;
+}
+
+.pre:hover {
+  background: none;
+}
+
+.desca {
+  color: blue;
+  font-size: 10px;
+}
+
+.desca:hover {
+  background: none;
+}
+
+.predes {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.capa {
+  padding: 15px;
+}
+
+.ruta {
+  width: 375px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buscapa {
+  width: 300px;
+  padding: 6px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.area {
+  width: 300px;
+  padding: 6px;
+  height: 30px;
+  border-radius: 6px;
+}
+.insignia {
+  width: 300px;
+  padding: 6px;
+  height: 30px;
+  border-radius: 6px;
+}
+.separ {
+  padding-right: 10px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+
+  padding: 2px 16px;
+}
+
+.cardbutton {
+  padding-bottom: 20px;
+}
+
+.cardbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.btncard {
+  background-color: #7f3eeb;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.selectform {
+  padding: 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.desde{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.hasta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.inputdesde{
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.inputhasta{
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.btnfiltrar{
+    background-color:  #7f3eeb;
+    width: 100px;
+    height: 40px;
+    border: 2px solid  #7f3eeb;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.btnfiltrar:hover{
+    background-color: white;
+    color: black;
+}
+
+.john{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.conta1{
+  display: grid;
+}
+
+
+div.conta2{
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  padding: 5px;
+}
+
+
