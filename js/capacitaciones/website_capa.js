@@ -1,5 +1,18 @@
 var containercapa = document.getElementById("containercapa");
 var BuscarCap = document.getElementById("BuscarCapa");
+var FiltrarRRHH = document.getElementById("areaRRHH");
+
+
+FiltrarRRHH.addEventListener("change",filtroAreaRRHH)
+
+
+
+function filtroAreaRRHH(){
+  let arrayAreaRRHH = capacitacion.filter(
+   item => item.area === "Recursos HH"
+  )
+  renderizarcapa(arrayAreaRRHH)
+}
 
 
 
